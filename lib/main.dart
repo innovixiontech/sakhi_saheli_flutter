@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:sakhi_sali/Routes/routeName.dart';
-import 'package:sakhi_sali/View/splash/splash_screen.dart';
-
 import 'Routes/routes.dart';
 
 void main() {

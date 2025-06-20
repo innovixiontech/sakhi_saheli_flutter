@@ -8,7 +8,7 @@ class AppColors {
   }
   AppColors._internal();
 
-  Color blue = const Color(0xFF0066FF);
+  Color primaryRed	 = const Color(0xFFFF6F61);
   Color appBackgroundColor = const Color(0xFFEFF6FF);
   Color softWhite	 = const Color(0xFFF9FAFB);
   Color darkGrey	 = const Color(0xFF4B5563);

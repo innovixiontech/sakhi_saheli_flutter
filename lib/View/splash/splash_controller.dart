@@ -1,5 +1,4 @@
-import 'package:get/get.dart';
-import 'package:sakhi_sali/Routes/routeName.dart';
+import "package:sakhi_sali/Import/custom_import.dart";
 class SplashController extends GetxController{
   @override
   void onInit() {
