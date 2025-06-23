@@ -4,6 +4,7 @@ class PrimaryButton extends StatelessWidget {
   final String title;
   final VoidCallback onTap;
   final Widget? icon;
+  final Widget? suffixIcon;
   final double? height;
   final double? width;
   const PrimaryButton({
@@ -11,6 +12,7 @@ class PrimaryButton extends StatelessWidget {
     required this.title,
     required this.onTap,
     this.icon,
+    this.suffixIcon,
     this.height,
     this.width,
   });
@@ -18,6 +20,7 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      onTap: onTap,
       child: Center(
         child: Container(
           // padding: EdgeInsets.symmetric(horizontal: 12),
@@ -40,6 +43,9 @@ class PrimaryButton extends StatelessWidget {
                   fontSize: 14,
                 ),
               ),
+              spaceHorizontal10,
+
+              ?suffixIcon,
             ],
           ),
         ),

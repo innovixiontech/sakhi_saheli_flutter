@@ -51,7 +51,8 @@ class AppStrings {
   final String enterOtpSubtitle =
       "Please enter the verification code sent to your email";
   final String verifyOtp = "Verify OTP";
-  final String resendCode = "Didn't receive code? Resend";
+  final String didNotReceiveCode = "Didn't receive code?";
+  final String resend = "Resend";
 
   // Dashboard
   final String dashboardTitle = "DashBoard";

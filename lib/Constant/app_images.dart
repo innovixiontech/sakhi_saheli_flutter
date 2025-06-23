@@ -14,4 +14,5 @@ class AppImages {
   final String facebookIcon = "assets/images/facebook_icon.png";
 
   //icons
+  final String sendIcon = "assets/icons/send_icon.png";
 }

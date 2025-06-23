@@ -33,6 +33,7 @@ final spaceVertical120 = SizedBox(height: 120.h);
 final spaceVertical130 = SizedBox(height: 130.h);
 final spaceVertical231 = SizedBox(height: 231.h);
 final spaceVertical276 = SizedBox(height: 276.h);
+final spaceVertical250 = SizedBox(height: 250.sp);
 
 // 🔽 Horizontal Spacing
 final spaceHorizontal2 = SizedBox(width: 2.w);

@@ -71,12 +71,17 @@ class LoginScreen extends StatelessWidget {
                     onTap: () {},
                   ),
                   spaceVertical20,
-                  Center(
-                    child: Text(
-                      AppStrings().forgotPassword,
-                      style: AppTextStyles().robotoMediumStyle.copyWith(
-                        color: AppColors.primaryRed,
-                        fontSize: 14,
+                  GestureDetector(
+                    onTap: () {
+                      Get.offNamed(RouteName.forgotPassword);
+                    },
+                    child: Center(
+                      child: Text(
+                        AppStrings().forgotPassword,
+                        style: AppTextStyles().robotoMediumStyle.copyWith(
+                          color: AppColors.primaryRed,
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   ),
