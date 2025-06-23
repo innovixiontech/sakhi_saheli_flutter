@@ -1,42 +1,33 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static final AppColors instance = AppColors._internal();
+  static const Color primaryRed = Color(0xFFFF6F61);
+  static const Color appBackgroundColor = Color(0xFFEFF6FF);
+  static const Color softWhite = Color(0xFFF9FAFB);
+  static const Color darkGrey = Color(0xFF4B5563);
+  static const Color black = Color(0xFF000000);
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color green = Color(0xFF166534);
+  static const Color darkMaroon = Color(0xFF9F1239);
 
-  factory AppColors() {
-    return instance;
-  }
-  AppColors._internal();
-
-  Color primaryRed	 = const Color(0xFFFF6F61);
-  Color appBackgroundColor = const Color(0xFFEFF6FF);
-  Color softWhite	 = const Color(0xFFF9FAFB);
-  Color darkGrey	 = const Color(0xFF4B5563);
-  Color black = const Color(0xFF000000);
-  Color white = const Color(0xFFFFFFFF);
-  Color green = const Color(0xFF166534);
-  Color darkMaroon = const Color(0xFF9F1239);
-
-//
-
-// Color textColor = const Color(0xFF282828);
-// Color textColor1 = const Color(0xFFbcc9f5);
-// Color textColor2 = const Color(0xFF8E8E8E);
-// Color borderColor = const Color(0xFFDBDBDB);
-// Color borderColor1 = const Color(0xFFd9dade);
-// Color borderColor2 = const Color(0xFFC4C4C4);
-// Color darkGray = const Color(0xFFDDDDDD);
-// Color lightGray = const Color(0xFF9B9B9B);
-// Color transparent = const Color(0x00000000);
-// Color hintColor = const Color(0xFF9B9B9B);
-// Color hintColor1 = const Color(0xFFF4F4F4);
-// Color buttonColor = const Color(0xFF3063a4);
-// Color buttonDisableColor = const Color(0xFF9B9B9B).withOpacity(0.3);
-// Color lightGrayUpload = const Color(0xFFFAFAFA);
-// Color dividerColor = const Color(0xFFF4F2F2);
-// Color backColor = const Color(0xffFBF8FF);
-// Color editTextBackColor = const Color(0xfffbfcff);
-// Color success = const Color(0xFFddf4e4);
-// Color pending = const Color(0xFFf4f0d7);
-// Color failed = const Color(0xFFfee9e4);
+  // static const Color textColor = Color(0xFF282828);
+  // static const Color textColor1 = Color(0xFFbcc9f5);
+  // static const Color textColor2 = Color(0xFF8E8E8E);
+  // static const Color borderColor = Color(0xFFDBDBDB);
+  // static const Color borderColor1 = Color(0xFFd9dade);
+  // static const Color borderColor2 = Color(0xFFC4C4C4);
+  // static const Color darkGray = Color(0xFFDDDDDD);
+  // static const Color lightGray = Color(0xFF9B9B9B);
+  // static const Color transparent = Color(0x00000000);
+  // static const Color hintColor = Color(0xFF9B9B9B);
+  // static const Color hintColor1 = Color(0xFFF4F4F4);
+  // static const Color buttonColor = Color(0xFF3063a4);
+  // static final Color buttonDisableColor = Color(0xFF9B9B9B).withOpacity(0.3);
+  // static const Color lightGrayUpload = Color(0xFFFAFAFA);
+  // static const Color dividerColor = Color(0xFFF4F2F2);
+  // static const Color backColor = Color(0xffFBF8FF);
+  // static const Color editTextBackColor = Color(0xfffbfcff);
+  // static const Color success = Color(0xFFddf4e4);
+  // static const Color pending = Color(0xFFf4f0d7);
+  // static const Color failed = Color(0xFFfee9e4);
 }

@@ -44,7 +44,9 @@ class CustomTextFormField extends StatelessWidget {
                   ? !textFieldController.isPasswordVisible
                   : false,
               textAlignVertical: TextAlignVertical.center,
-              style: AppTextStyles().robotoRegularStyle,
+              style: AppTextStyles().robotoRegularStyle.copyWith(
+                fontSize: 12.25,
+              ),
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: EdgeInsets.symmetric(
@@ -65,8 +67,10 @@ class CustomTextFormField extends StatelessWidget {
                       )
                     : suffixIcon,
                 hintText: hintText,
-                hintStyle: AppTextStyles().robotoRegularStyle,
-                fillColor: AppColors().white,
+                hintStyle: AppTextStyles().robotoRegularStyle.copyWith(
+                  fontSize: 12.25,
+                ),
+                fillColor: AppColors.white,
                 filled: true,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),

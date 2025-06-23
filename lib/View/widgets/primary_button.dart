@@ -24,7 +24,7 @@ class PrimaryButton extends StatelessWidget {
           height: height ?? 45.h,
           width: width ?? 315.w,
           decoration: BoxDecoration(
-            color: AppColors().primaryRed,
+            color: AppColors.primaryRed,
             borderRadius: BorderRadius.circular(5),
           ),
           child: Row(
@@ -36,7 +36,8 @@ class PrimaryButton extends StatelessWidget {
               Text(
                 title,
                 style: AppTextStyles().robotoMediumStyle.copyWith(
-                  color: AppColors().white,
+                  color: AppColors.white,
+                  fontSize: 14,
                 ),
               ),
             ],

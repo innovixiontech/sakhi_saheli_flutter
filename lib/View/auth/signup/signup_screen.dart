@@ -31,14 +31,14 @@ class SignupScreen extends StatelessWidget {
                   Text(
                     AppStrings().createAccount,
                     style: AppTextStyles().robotoSemiBoldStyle.copyWith(
-                      color: AppColors().black,
+                      color: AppColors.black,
                     ),
                   ),
                   spaceVertical10,
                   Text(
                     AppStrings().signUpSubTitle,
                     style: AppTextStyles().robotoRegularStyle.copyWith(
-                      color: AppColors().white,
+                      color: AppColors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -80,7 +80,7 @@ class SignupScreen extends StatelessWidget {
                         width: 95,
                         icon: Image.asset(
                           AppImages().googleIcon,
-                          color: AppColors().white,
+                          color: AppColors.white,
                         ),
                         onTap: () {},
                       ),
@@ -91,7 +91,7 @@ class SignupScreen extends StatelessWidget {
                         width: 95,
                         icon: Image.asset(
                           AppImages().appleIcon,
-                          color: AppColors().white,
+                          color: AppColors.white,
                         ),
                         onTap: () {},
                       ),
@@ -102,7 +102,7 @@ class SignupScreen extends StatelessWidget {
                         width: 95,
                         icon: Image.asset(
                           AppImages().facebookIcon,
-                          color: AppColors().white,
+                          color: AppColors.white,
                         ),
                         onTap: () {},
                       ),

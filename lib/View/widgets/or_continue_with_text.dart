@@ -14,7 +14,7 @@ class OrContinueWithText extends StatelessWidget {
           child: Text(
             AppStrings().orContinueWith,
             style: AppTextStyles().robotoRegularStyle.copyWith(
-              color: AppColors().white,
+              color: AppColors.white,
             ),
           ),
         ),

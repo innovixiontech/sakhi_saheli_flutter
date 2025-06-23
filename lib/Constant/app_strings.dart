@@ -6,7 +6,6 @@ class AppStrings {
   }
 
   AppStrings._internal();
-
   // App name and branding
   final String appName = "Shakhi Shali";
   final String tagline = "Empowering Every Step of Your Journey";
@@ -94,7 +93,6 @@ class AppStrings {
   final String calendar = "Calendar";
   final String reports = "Reports";
   final String profile = "Profile";
-
 
   // final String appName = " Sakhi Sali ";
   // final String login = 'Login';

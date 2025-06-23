@@ -32,7 +32,9 @@ class LoginScreen extends StatelessWidget {
                   spaceVertical276,
                   Text(
                     AppStrings().emailOrPhone,
-                    style: AppTextStyles().robotoMediumStyle,
+                    style: AppTextStyles().robotoMediumStyle.copyWith(
+                      fontSize: 14,
+                    ),
                   ),
                   spaceVertical5,
                   CustomTextFormField(
@@ -43,7 +45,9 @@ class LoginScreen extends StatelessWidget {
                   spaceVertical25,
                   Text(
                     AppStrings().password,
-                    style: AppTextStyles().robotoMediumStyle,
+                    style: AppTextStyles().robotoMediumStyle.copyWith(
+                      fontSize: 14,
+                    ),
                   ),
                   spaceVertical5,
 
@@ -54,24 +58,14 @@ class LoginScreen extends StatelessWidget {
                   ),
 
                   spaceVertical25,
-                  PrimaryButton(
-                    title: AppStrings().login,
-                    onTap: () {
-                      final email = controller.emailController.text;
-
-                      if (!email.isValidEmail()) {
-                        Get.snackbar("Oops!", "Enter a valid email address");
-                        return;
-                      }
-                    },
-                  ),
+                  PrimaryButton(title: AppStrings().login, onTap: () {}),
                   spaceVertical25,
                   OrContinueWithText(),
                   spaceVertical25,
                   PrimaryButton(
                     icon: Image.asset(
                       AppImages().googleIcon,
-                      color: AppColors().white,
+                      color: AppColors.white,
                     ),
                     title: AppStrings().google,
                     onTap: () {},
@@ -81,7 +75,8 @@ class LoginScreen extends StatelessWidget {
                     child: Text(
                       AppStrings().forgotPassword,
                       style: AppTextStyles().robotoMediumStyle.copyWith(
-                        color: AppColors().primaryRed,
+                        color: AppColors.primaryRed,
+                        fontSize: 14,
                       ),
                     ),
                   ),
@@ -95,14 +90,16 @@ class LoginScreen extends StatelessWidget {
                           Text(
                             AppStrings().dontHaveAccount,
                             style: AppTextStyles().robotoMediumStyle.copyWith(
-                              color: AppColors().darkGrey,
+                              color: AppColors.darkGrey,
+                              fontSize: 14,
                             ),
                           ),
                           spaceHorizontal5,
                           Text(
                             AppStrings().signUpNow,
                             style: AppTextStyles().robotoMediumStyle.copyWith(
-                              color: AppColors().primaryRed,
+                              color: AppColors.primaryRed,
+                              fontSize: 14,
                             ),
                           ),
                         ],

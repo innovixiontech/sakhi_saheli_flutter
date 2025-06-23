@@ -25,6 +25,9 @@ export '../View/splash/splash_screen.dart';
 // routes
 export '../../Routes/routeName.dart';
 
+// getX
+export 'package:get/get.dart';
+
 // getX controllers
 export '../../Controller/text_form_field_controller.dart';
 export "package:sakhi_sali/View/auth/login/login_controller.dart";

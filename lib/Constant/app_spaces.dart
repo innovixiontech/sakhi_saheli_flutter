@@ -51,4 +51,3 @@ final spaceHorizontal60 = SizedBox(width: 60.w);
 final spaceHorizontal100 = SizedBox(width: 100.w);
 final spaceHorizontal150 = SizedBox(width: 150.w);
 final spaceHorizontal200 = SizedBox(width: 200.w);
-
