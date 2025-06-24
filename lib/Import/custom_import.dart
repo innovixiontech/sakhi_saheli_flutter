@@ -13,14 +13,18 @@ export 'package:sakhi_sali/Constant/app_text_styles.dart';
 // Widgets
 export 'package:sakhi_sali/View/widgets/custom_text_form_field.dart';
 export "package:sakhi_sali/View/widgets/primary_button.dart";
-
 export "package:sakhi_sali/View/widgets/or_continue_with_text.dart";
+export 'package:sakhi_sali/View/widgets/custom_app_bar.dart';
 
 // screens
 export 'package:sakhi_sali/View/auth/signup/signup_screen.dart';
-
 export '../View/auth/login/login_screen.dart';
 export '../View/splash/splash_screen.dart';
+
+export 'package:sakhi_sali/View/Reports/reports_screen.dart';
+export 'package:sakhi_sali/View/calendar/calendar_screen.dart';
+export 'package:sakhi_sali/View/home/home_screen.dart';
+export 'package:sakhi_sali/View/profile/profile_screen.dart';
 
 // routes
 export '../../Routes/routeName.dart';
@@ -32,3 +36,4 @@ export 'package:get/get.dart';
 export '../../Controller/text_form_field_controller.dart';
 export "package:sakhi_sali/View/auth/login/login_controller.dart";
 export "package:sakhi_sali/View/auth/signup/signup_controller.dart";
+export 'package:sakhi_sali/View/bottomNav/bottom_nav_controller.dart';

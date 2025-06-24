@@ -76,7 +76,9 @@ class VerifyOtpScreen extends StatelessWidget {
 
                   PrimaryButton(
                     title: AppStrings().verifyOtp,
-                    onTap: () {},
+                    onTap: () {
+                      Get.offNamed(RouteName.bottomBar);
+                    },
                     suffixIcon: Image.asset(
                       AppImages().sendIcon,
                       color: AppColors.white,
