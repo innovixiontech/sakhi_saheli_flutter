@@ -4,11 +4,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leadingIcon;
   final Widget? trailingIcon;
   final Text title;
+  final Color? backgroundColor; // update
   final VoidCallback? onLeadingTap;
   final VoidCallback? onTrailingTap;
 
   const CustomAppBar({
     super.key,
+    this.backgroundColor, // update
     this.leadingIcon,
     this.trailingIcon,
     required this.title,
@@ -19,7 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Color(0xFFFFF5F7),
+      backgroundColor: backgroundColor ?? AppColors.white, // update
       elevation: 1,
       centerTitle: true,
       title: title,

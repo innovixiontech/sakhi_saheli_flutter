@@ -5,6 +5,8 @@ class ReportsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Hi this is reports screen")));
+    return SafeArea(
+      child: Scaffold(body: Center(child: Text('this is Report Screen'))),
+    );
   }
 }

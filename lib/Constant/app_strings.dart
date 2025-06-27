@@ -95,7 +95,24 @@ class AppStrings {
   final String reports = "Reports";
   final String profile = "Profile";
 
+  // Profile
+  final String achieveItem1 = "Consistent Tracker";
+  final String achieveItem2 = "Health Hero";
+  final String achieveItem3 = "Self-Care Queen";
+
+  // calender
+  final String calenderTitle = "Track Your Period";
+  final String currentPeriodDateTitle = "Current Period Date";
+  final String lastPeriodStartedOn = "Your last period started on:";
+  final String nextPeriodStartsOn = "Your next period will start on:";
+  final String averageCycleLength = "Average cycle length:";
+  final String saveChanges = "Save Changes";
+  final String periodStart = "Period Start";
+  final String periodEnd = "Period End";
+  final String today = "Today";
+
   // final String appName = " Sakhi Sali ";
+
   // final String login = 'Login';
   // final String signup = 'Sign Up';
   //
@@ -113,4 +130,6 @@ class AppStrings {
   // final String apple = "Apple";
   // final String doNotHaveAccount = "Don't have an account?";
   // final String alreadyHaveAccount = "Already have an account?";
+
+  //
 }

@@ -41,6 +41,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   logger: ^2.5.0
   flutter_otp_text_field: ^1.5.1+1
+  table_calendar: ^3.2.0
 
 dev_dependencies:
   flutter_test:

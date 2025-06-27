@@ -72,4 +72,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.white,
   );
+  // Pacifico 400
+  final TextStyle pacificoRegularStyle = TextStyle(
+    fontFamily: 'Pacifico',
+    fontSize: 24,
+    fontWeight: FontWeight.w400,
+    color: AppColors.darkenGrey,
+  );
 }

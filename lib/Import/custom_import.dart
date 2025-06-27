@@ -2,6 +2,7 @@
 export 'package:flutter/material.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:get/get.dart';
+export 'package:table_calendar/table_calendar.dart';
 
 // Constants
 export 'package:sakhi_sali/Constant/app_colors.dart';
@@ -15,6 +16,9 @@ export 'package:sakhi_sali/View/widgets/custom_text_form_field.dart';
 export "package:sakhi_sali/View/widgets/primary_button.dart";
 export "package:sakhi_sali/View/widgets/or_continue_with_text.dart";
 export 'package:sakhi_sali/View/widgets/custom_app_bar.dart';
+export 'package:sakhi_sali/View/widgets/profile_Card_Items.dart';
+export 'package:sakhi_sali/View/widgets/calender_buildCell.dart';
+export 'package:sakhi_sali/View/widgets/calender_legend_item.dart';
 
 // screens
 export 'package:sakhi_sali/View/auth/signup/signup_screen.dart';
@@ -37,3 +41,5 @@ export '../../Controller/text_form_field_controller.dart';
 export "package:sakhi_sali/View/auth/login/login_controller.dart";
 export "package:sakhi_sali/View/auth/signup/signup_controller.dart";
 export 'package:sakhi_sali/View/bottomNav/bottom_nav_controller.dart';
+export 'package:sakhi_sali/View/profile/controller/profile_controller.dart';
+export 'package:sakhi_sali/View/calendar/controller/calender_controller.dart';

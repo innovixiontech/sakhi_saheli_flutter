@@ -118,7 +118,6 @@ class HomeScreen extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return Container(
                             margin: EdgeInsets.only(right: 12.w),
-
                             height: 93.h,
                             width: 80.w,
                             decoration: BoxDecoration(
@@ -165,7 +164,6 @@ class HomeScreen extends StatelessWidget {
                                   child: Text(
                                     itemList[index]['title'],
                                     style: AppTextStyles().robotoRegularStyle,
-
                                     overflow: TextOverflow.ellipsis,
                                     maxLines: 1,
                                   ),

@@ -10,6 +10,11 @@ class AppColors {
   static const Color green = Color(0xFF166534);
   static const Color darkMaroon = Color(0xFF9F1239);
   static const Color screenBgColor = Color(0xFFFFEBEF);
+  static const Color darkenGrey = Color(0xFF1F2937);
+  static const Color textBlack = Color(0xFF374151);
+  static const Color subtitleBlack = Color(0xFF6b7280);
+  static const Color appBarLightPink = Color(0xFFFFF5F7);
+  static const Color bloodDrop = Color(0xFFEF4444);
 
   // static const Color textColor = Color(0xFF282828);
   // static const Color textColor1 = Color(0xFFbcc9f5);
