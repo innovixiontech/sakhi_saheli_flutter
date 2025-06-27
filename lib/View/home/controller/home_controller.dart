@@ -1,6 +1,10 @@
 import 'package:sakhi_sali/Import/custom_import.dart';
 
 class HomeController extends GetxController {
+  final RxInt currentDay = 17.obs;
+  final RxInt totalDays = 28.obs;
+  double get progress => currentDay.value / totalDays.value;
+
   // itemList
   List<Map<String, dynamic>> itemList = [
     {"image": AppImages().periodIcon, "title": AppStrings().period},
@@ -29,12 +33,25 @@ class HomeController extends GetxController {
       'subtitle': AppStrings().sleepQualityDesc,
     },
   ];
-
   // Quick Log List
-
   List<Map<String, dynamic>> quickLogList = [
     {'image': AppImages().flowIcon, 'title': AppStrings().flow},
     {'image': AppImages().moonIcon, 'title': AppStrings().mood},
     {'image': AppImages().medicineIcon, 'title': AppStrings().medicine},
+  ];
+
+  // Wellness Tips
+
+  List<Map<String, dynamic>> wellNessList = [
+    {
+      "image": AppImages().yogaPmsImage,
+      'title': AppStrings().yogaForPms,
+      'subtitle': AppStrings().yogaDesc,
+    },
+    {
+      "image": AppImages().dietTipsImage,
+      'title': AppStrings().dietTips,
+      'subtitle': AppStrings().dietDesc,
+    },
   ];
 }

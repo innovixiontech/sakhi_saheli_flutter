@@ -1,4 +1,5 @@
 import 'package:sakhi_sali/Import/custom_import.dart';
+import 'package:sakhi_sali/Routes/routes.dart';
 import 'package:sakhi_sali/View/home/controller/home_controller.dart';
 
 import '../bottomNav/bottom_nav_controller.dart';
@@ -8,19 +9,21 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final HomeController controller = Get.put(HomeController());
+    HomeController controller = Get.put(HomeController());
     final itemList = controller.itemList;
     final insightsList = controller.insightsList;
     final quickLogList = controller.quickLogList;
+    final wellNessList = controller.wellNessList;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xFFFFF5F7),
         appBar: CustomAppBar(
+          backgroundColor: Color(0xFFFFF5F7),
           title: Text(
             AppStrings().dashboardTitle,
-            style: AppTextStyles().robotoSemiBoldStyle.copyWith(
+            style: AppTextStyles().robotoMediumStyle.copyWith(
               color: AppColors.black,
-              fontSize: 24.sp,
+              fontSize: 17,
             ),
           ),
           leadingIcon: Icon(Icons.person),
@@ -63,6 +66,10 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Spacer(),
                         Container(
+                          padding: EdgeInsetsGeometry.symmetric(
+                            vertical: 5,
+                            horizontal: 5,
+                          ),
                           height: 50.h,
                           width: 50.w,
                           decoration: BoxDecoration(
@@ -92,20 +99,52 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     spaceVertical15,
-                    Center(
-                      child: Container(
-                        height: 73,
-                        width: 343,
-                        decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.1),
-                              blurRadius: 8,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          color: AppColors.white,
-                          borderRadius: BorderRadius.circular(12),
+                    Obx(
+                      () => Center(
+                        child: Container(
+                          padding: EdgeInsetsGeometry.all(16),
+                          height: 73,
+                          width: 343,
+                          decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.1),
+                                blurRadius: 8,
+                                offset: Offset(0, 4),
+                              ),
+                            ],
+                            color: AppColors.white,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    AppStrings().currentCycle,
+                                    style: AppTextStyles().robotoMediumStyle,
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "Day ${controller.currentDay.value} of ${controller.totalDays.value} ",
+                                    style: AppTextStyles().robotoRegularStyle,
+                                  ),
+                                ],
+                              ),
+                              spaceVertical10,
+                              LinearProgressIndicator(
+                                value: controller.progress,
+                                minHeight: 8,
+                                backgroundColor: AppColors.darkGrey.withOpacity(
+                                  0.3,
+                                ),
+                                valueColor: AlwaysStoppedAnimation<Color>(
+                                  AppColors.primaryRed,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -292,14 +331,83 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    spaceVertical30,
+                    spaceVertical20,
                     Text(
                       AppStrings().wellnessTips,
-                      style: AppTextStyles().robotoSemiBoldStyle.copyWith(
+                      style: AppTextStyles().robotoMediumStyle.copyWith(
                         color: AppColors.black,
                       ),
                     ),
-                    spaceVertical30,
+                    spaceVertical20,
+                    SizedBox(
+                      height: 210,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: wellNessList.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              if (index == 0) {
+                                Get.toNamed(RouteName.pmsYogaPoses);
+                              } else if (index == 1) {
+                                Get.toNamed(RouteName.pmsFriendlyFood);
+                              }
+                            },
+                            child: Container(
+                              padding: EdgeInsetsGeometry.only(bottom: 10),
+                              margin: EdgeInsetsGeometry.only(left: 10),
+                              height: 210.h,
+                              width: 165.w,
+                              decoration: BoxDecoration(
+                                color: AppColors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.1),
+                                    blurRadius: 8,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image.asset(
+                                      wellNessList[index]['image'],
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  spaceVertical10,
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 10),
+                                    child: Text(
+                                      wellNessList[index]['title'],
+                                      style: AppTextStyles().robotoMediumStyle,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                    ),
+                                  ),
+                                  spaceVertical5,
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 10),
+                                    child: Text(
+                                      wellNessList[index]['subtitle'],
+                                      style: AppTextStyles().robotoRegularStyle,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 2,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    spaceVertical20,
                   ],
                 ),
               ],

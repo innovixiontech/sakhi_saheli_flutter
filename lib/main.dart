@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:sakhi_sali/Routes/routeName.dart';
 import 'Routes/routes.dart';
+import 'View/home/controller/home_controller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(390, 840),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (BuildContext context, child)=>GetMaterialApp(
+      builder: (BuildContext context, child) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -38,15 +41,10 @@ class MyApp extends StatelessWidget {
           // This works for code too, not just values: Most code changes can be
           // tested with just a hot reload.
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-
-
         ),
         initialRoute: RouteName.splashScreen,
         getPages: AppRoutes.appRoute(),
-
       ),
     );
   }
 }
-
-

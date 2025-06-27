@@ -10,4 +10,6 @@ class RouteName {
   static String profilePage = "/profilePage";
   static String accountDetails = "/accountDetails";
   static String productDetails = "/productDetails";
+  static String pmsFriendlyFood = "/pmsFriendlyFood";
+  static String pmsYogaPoses = "/pmsYogaPoses";
 }

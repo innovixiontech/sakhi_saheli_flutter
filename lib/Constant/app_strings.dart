@@ -111,25 +111,77 @@ class AppStrings {
   final String periodEnd = "Period End";
   final String today = "Today";
 
-  // final String appName = " Sakhi Sali ";
+  // PMS Yoga Poses Screen
+  final String pmsYogaTitle = "PMS Yoga Poses";
+  final String startPractice = "Start Practice";
 
-  // final String login = 'Login';
-  // final String signup = 'Sign Up';
-  //
-  // final String emailHint = 'Email address';
-  // final String passwordHint = 'Password';
-  // final String confirmPasswordHint = 'Confirm Password';
-  // final String rememberMe = "Remember me";
-  // final String forgotPassword = "Forgot Password?";
-  // final String continueText = "Continue";
-  // final String orSignUpWith = "or Sign up with";
-  //
-  // final String signUp = "Sign Up";
-  // final String signIn = "Sign In";
-  // final String google = "Google";
-  // final String apple = "Apple";
-  // final String doNotHaveAccount = "Don't have an account?";
-  // final String alreadyHaveAccount = "Already have an account?";
+  // Yoga Pose Names
+  final String poseChild = "Child's Pose (Balasana)";
+  final String poseCatCow = "Cat-Cow Pose";
+  final String poseForwardFold = "Forward Fold";
+  final String poseButterfly = "Butterfly Pose";
 
-  //
+  // Yoga Pose Levels
+  final String levelBeginner = "Beginner";
+  final String levelIntermediate = "Intermediate";
+
+  // Yoga Pose Descriptions
+  final String descChild =
+      "Perfect for beginners and advanced practitioners alike  this restorative pose helps relieve stress and tension.";
+  final String descCatCow = "Relieves tension in spine and lower back";
+  final String descForwardFold = "Relieves tension in lower back";
+  final String descButterfly = "Opens hips and relieves cramps";
+
+  // Yoga Pose Durations
+  final String durationChild = "5-10 mins";
+  final String durationCatCow = "3-5 mins";
+  final String durationForwardFold = "5 mins";
+  final String durationButterfly = "5-8 mins";
+
+  // PMS Foods Screen
+  final String pmsFoodTitle = "PMS-Friendly Foods";
+  final String searchPlaceholder = "Search foods...";
+
+  // Categories
+  final String categorySweets = "Sweets";
+  final String categoryGreens = "Greens";
+  final String categoryFruits = "Fruits";
+  final String categoryGrains = "Grains";
+
+  // Food 1 - Dark Chocolate
+  final String foodDarkChocolateTitle = "Dark Chocolate";
+  final String foodDarkChocolateDesc =
+      "Rich in magnesium and antioxidants, dark chocolate helps boost mood and relieve stress while reducing cramps.";
+
+  // Food 2 - Leafy Greens
+  final String foodLeafyGreensTitle = "Leafy Greens";
+  final String foodLeafyGreensDesc =
+      "Packed with magnesium and iron, leafy greens help reduce bloating and fatigue while supporting energy levels.";
+
+  // Food 3 - Mixed Berries
+  final String foodMixedBerriesTitle = "Mixed Berries";
+  final String foodMixedBerriesDesc =
+      "High in vitamin C and antioxidants, berries help stabilize mood and reduce inflammation during PMS.";
 }
+
+// final String appName = " Sakhi Sali ";
+
+// final String login = 'Login';
+// final String signup = 'Sign Up';
+//
+// final String emailHint = 'Email address';
+// final String passwordHint = 'Password';
+// final String confirmPasswordHint = 'Confirm Password';
+// final String rememberMe = "Remember me";
+// final String forgotPassword = "Forgot Password?";
+// final String continueText = "Continue";
+// final String orSignUpWith = "or Sign up with";
+//
+// final String signUp = "Sign Up";
+// final String signIn = "Sign In";
+// final String google = "Google";
+// final String apple = "Apple";
+// final String doNotHaveAccount = "Don't have an account?";
+// final String alreadyHaveAccount = "Already have an account?";
+
+//
