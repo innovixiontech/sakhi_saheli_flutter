@@ -52,4 +52,8 @@ class AppImages {
   final String greensIcon = "assets/images/greens_icon.png";
   final String grainsIcon = "assets/images/grains_icon.png";
   final String fruitsIcon = "assets/images/fruits_icon.png";
+  final String hyderationIcon = "assets/icons/hyderation_icon.png";
+  final String sleepScheduleIcon = "assets/icons/sleep_schedule_icon.png";
+  final String stretchRelieveIcon = "assets/icons/stretch_relieve_icon.png";
+  final String wellnessTipsIcon = "assets/icons/Wellness_tips_icon.png";
 }

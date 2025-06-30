@@ -12,4 +12,5 @@ class RouteName {
   static String productDetails = "/productDetails";
   static String pmsFriendlyFood = "/pmsFriendlyFood";
   static String pmsYogaPoses = "/pmsYogaPoses";
+  static String notificationScreen = "/notificationScreen";
 }

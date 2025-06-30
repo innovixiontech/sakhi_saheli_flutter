@@ -6,6 +6,7 @@ class AppStrings {
   }
 
   AppStrings._internal();
+
   // App name and branding
   final String appName = "Shakhi Shali";
   final String tagline = "Empowering Every Step of Your Journey";
@@ -162,8 +163,42 @@ class AppStrings {
   final String foodMixedBerriesTitle = "Mixed Berries";
   final String foodMixedBerriesDesc =
       "High in vitamin C and antioxidants, berries help stabilize mood and reduce inflammation during PMS.";
-}
 
+  // 🔔 Notifications
+  final String notificationsTitle = "Notifications";
+
+  // Tabs
+  final String tabAll = "All";
+  final String tabHealthTips = "Health Tips";
+  final String tabReminders = "Reminders";
+  final String tabUpdates = "Updates";
+
+  // Notification: Stretch to Relieve Cramps
+  final String notifStretchTitle = "Stretch to Relieve Cramps";
+  final String notifStretchTime = "10:00 AM";
+  final String notifStretchDesc =
+      "Try these gentle yoga poses to ease menstrual discomfort. Perfect for beginners!";
+  final String notifStretchCTA = "View Poses →";
+
+  // Notification: Hydration Reminder
+  final String notifHydrationTitle = "Hydration Reminder";
+  final String notifHydrationTime = "9:30 AM";
+  final String notifHydrationDesc =
+      "Remember to drink water regularly. Staying hydrated helps reduce bloating and cramps.";
+
+  // Notification: New Wellness Tips Added
+  final String notifWellnessTitle = "New Wellness Tips Added";
+  final String notifWellnessTime = "Yesterday";
+  final String notifWellnessDesc =
+      "Check out our latest collection of natural remedies and wellness tips for PMS relief.";
+  final String notifWellnessCTA = "Read More →";
+
+  // Notification: Sleep Schedule Reminder
+  final String notifSleepTitle = "Sleep Schedule Reminder";
+  final String notifSleepTime = "2 days ago";
+  final String notifSleepDesc =
+      "Maintaining a consistent sleep schedule can help regulate your cycle and reduce PMS symptoms.";
+}
 // final String appName = " Sakhi Sali ";
 
 // final String login = 'Login';
