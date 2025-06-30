@@ -22,6 +22,52 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!isPassword) {
+      //  Normal field no password
+      return Container(
+        height: height ?? 55.0.h,
+        width: width ?? 340.0.w,
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              blurRadius: 8,
+              spreadRadius: 1,
+              offset: Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Center(
+          child: TextFormField(
+            controller: controller,
+            obscureText: false,
+            textAlignVertical: TextAlignVertical.center,
+            style: AppTextStyles().robotoRegularStyle.copyWith(fontSize: 12.25),
+            decoration: InputDecoration(
+              isDense: true,
+              contentPadding: EdgeInsets.symmetric(
+                vertical: 14,
+                horizontal: 16,
+              ),
+              prefixIcon: prefixIcon,
+              suffixIcon: suffixIcon,
+              hintText: hintText,
+              hintStyle: AppTextStyles().robotoRegularStyle.copyWith(
+                fontSize: 12.25,
+              ),
+              fillColor: AppColors.white,
+              filled: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: BorderSide.none,
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    // 🔹 Password field (with toggle)
     return GetBuilder<TextFieldController>(
       builder: (textFieldController) {
         return Container(
@@ -40,9 +86,7 @@ class CustomTextFormField extends StatelessWidget {
           child: Center(
             child: TextFormField(
               controller: controller,
-              obscureText: isPassword
-                  ? !textFieldController.isPasswordVisible
-                  : false,
+              obscureText: !textFieldController.isPasswordVisible,
               textAlignVertical: TextAlignVertical.center,
               style: AppTextStyles().robotoRegularStyle.copyWith(
                 fontSize: 12.25,
@@ -50,22 +94,20 @@ class CustomTextFormField extends StatelessWidget {
               decoration: InputDecoration(
                 isDense: true,
                 contentPadding: EdgeInsets.symmetric(
-                  vertical: 14, // controls vertical centering
+                  vertical: 14,
                   horizontal: 16,
                 ),
                 prefixIcon: prefixIcon,
-                suffixIcon: isPassword
-                    ? IconButton(
-                        icon: Icon(
-                          textFieldController.isPasswordVisible
-                              ? Icons.visibility
-                              : Icons.visibility_off,
-                        ),
-                        onPressed: () {
-                          textFieldController.toggleVisibility();
-                        },
-                      )
-                    : suffixIcon,
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    textFieldController.isPasswordVisible
+                        ? Icons.visibility
+                        : Icons.visibility_off,
+                  ),
+                  onPressed: () {
+                    textFieldController.toggleVisibility();
+                  },
+                ),
                 hintText: hintText,
                 hintStyle: AppTextStyles().robotoRegularStyle.copyWith(
                   fontSize: 12.25,

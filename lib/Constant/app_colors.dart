@@ -15,6 +15,9 @@ class AppColors {
   static const Color subtitleBlack = Color(0xFF6b7280);
   static const Color appBarLightPink = Color(0xFFFFF5F7);
   static const Color bloodDrop = Color(0xFFEF4444);
+  static const Color screenBgColor1 = Color(0xFFFFF5F7);
+  static const Color lightSuccessGreen = Color(0xFFDCFCE7);
+  // Light pinkish background
 
   // static const Color textColor = Color(0xFF282828);
   // static const Color textColor1 = Color(0xFFbcc9f5);

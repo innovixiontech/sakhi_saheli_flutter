@@ -15,6 +15,16 @@ class AppImages {
   final String appleIcon = "assets/images/apple_icon.png";
   final String facebookIcon = "assets/images/facebook_icon.png";
   final String profileImage = "assets/images/profile_img.png";
+  final String yogaPmsImage = "assets/images/yoga_pms_image.png";
+  final String dietTipsImage = "assets/images/diet_tips_image.png";
+  final String childPoseImage = "assets/images/child_pose_image.png";
+  final String catCowPoseImage = "assets/images/cat_cow_pose_image.png";
+  final String butterflyPoseImage = "assets/images/butterfly_pose_image.png";
+  final String forwordFoldPoseImage =
+      "assets/images/forword_fold_pose_image.png";
+  final String chocolateImage = "assets/images/chocolate_image.png";
+  final String leafyGreensImage = "assets/images/leafy_greens_image.png";
+  final String mixedBerriesImage = "assets/images/mixed_berries_image.png";
 
   //icons
   final String sendIcon = "assets/icons/send_icon.png";
@@ -37,4 +47,9 @@ class AppImages {
   final String bloodIcon = "assets/icons/blood_drop.png";
   final String calenderIconRED = "assets/icons/calender.png";
   final String periodEndIcon = "assets/icons/period_end.png";
+  final String clockIcon = "assets/icons/clock_icon.png";
+  final String sweetsIcon = "assets/images/sweets_icon.png";
+  final String greensIcon = "assets/images/greens_icon.png";
+  final String grainsIcon = "assets/images/grains_icon.png";
+  final String fruitsIcon = "assets/images/fruits_icon.png";
 }
