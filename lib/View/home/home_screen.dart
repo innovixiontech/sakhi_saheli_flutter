@@ -1,6 +1,7 @@
 import 'package:sakhi_sali/Import/custom_import.dart';
 import 'package:sakhi_sali/Routes/routes.dart';
 import 'package:sakhi_sali/View/home/controller/home_controller.dart';
+import 'package:sakhi_sali/View/notification/notification_screen.dart';
 
 import '../bottomNav/bottom_nav_controller.dart';
 
@@ -31,7 +32,13 @@ class HomeScreen extends StatelessWidget {
           onLeadingTap: () {
             Get.find<BottomNavController>().currentIndex.value = 3;
           },
-          onTrailingTap: () {},
+          onTrailingTap: () {
+            Get.to(() => NotificationScreen());
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => NotificationScreen()),
+            // );
+          },
         ),
         body: SingleChildScrollView(
           child: Padding(

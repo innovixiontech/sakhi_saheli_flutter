@@ -2,6 +2,7 @@ import "package:sakhi_sali/Import/custom_import.dart";
 import "package:sakhi_sali/View/auth/forgotPassword/forgot_password_screen.dart";
 import "package:sakhi_sali/View/auth/otp/verify_otp_screen.dart";
 import "package:sakhi_sali/View/bottomNav/Bottom_nav_screen.dart";
+import "package:sakhi_sali/View/notification/notification_screen.dart";
 import "package:sakhi_sali/View/pmsFood/pms_friendly_food_screen.dart";
 import "package:sakhi_sali/View/pmsYoga/pms_yoga_poses_screen.dart";
 
@@ -18,6 +19,10 @@ class AppRoutes {
       page: () => PmsFriendlyFoodScreen(),
     ),
     GetPage(name: RouteName.pmsYogaPoses, page: () => PmsYogaPoses()),
+    GetPage(
+      name: RouteName.notificationScreen,
+      page: () => NotificationScreen(),
+    ),
     // GetPage(name: RouteName.categoryPage, page: () => CategoryPage()),
     // GetPage(name: RouteName.profilePage, page: () => Profile()),
     // GetPage(
