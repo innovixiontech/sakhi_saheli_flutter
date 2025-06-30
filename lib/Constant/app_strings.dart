@@ -157,4 +157,56 @@ class AppStrings {
   // final String alreadyHaveAccount = "Already have an account?";
 
   //
+
+  // PMS Yoga Poses Screen
+  final String pmsYogaTitle = "PMS Yoga Poses";
+  final String startPractice = "Start Practice";
+
+  // Yoga Pose Names
+  final String poseChild = "Child's Pose (Balasana)";
+  final String poseCatCow = "Cat-Cow Pose";
+  final String poseForwardFold = "Forward Fold";
+  final String poseButterfly = "Butterfly Pose";
+
+  // Yoga Pose Levels
+  final String levelBeginner = "Beginner";
+  final String levelIntermediate = "Intermediate";
+
+  // Yoga Pose Descriptions
+  final String descChild =
+      "Perfect for beginners and advanced practitioners alike  this restorative pose helps relieve stress and tension.";
+  final String descCatCow = "Relieves tension in spine and lower back";
+  final String descForwardFold = "Relieves tension in lower back";
+  final String descButterfly = "Opens hips and relieves cramps";
+
+  // Yoga Pose Durations
+  final String durationChild = "5-10 mins";
+  final String durationCatCow = "3-5 mins";
+  final String durationForwardFold = "5 mins";
+  final String durationButterfly = "5-8 mins";
+
+  // PMS Foods Screen
+  final String pmsFoodTitle = "PMS-Friendly Foods";
+  final String searchPlaceholder = "Search foods...";
+
+  // Categories
+  final String categorySweets = "Sweets";
+  final String categoryGreens = "Greens";
+  final String categoryFruits = "Fruits";
+  final String categoryGrains = "Grains";
+
+  // Food 1 - Dark Chocolate
+  final String foodDarkChocolateTitle = "Dark Chocolate";
+  final String foodDarkChocolateDesc =
+      "Rich in magnesium and antioxidants, dark chocolate helps boost mood and relieve stress while reducing cramps.";
+
+  // Food 2 - Leafy Greens
+  final String foodLeafyGreensTitle = "Leafy Greens";
+  final String foodLeafyGreensDesc =
+      "Packed with magnesium and iron, leafy greens help reduce bloating and fatigue while supporting energy levels.";
+
+  // Food 3 - Mixed Berries
+  final String foodMixedBerriesTitle = "Mixed Berries";
+  final String foodMixedBerriesDesc =
+      "High in vitamin C and antioxidants, berries help stabilize mood and reduce inflammation during PMS.";
 }
