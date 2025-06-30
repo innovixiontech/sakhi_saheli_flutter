@@ -6,7 +6,6 @@ class AppStrings {
   }
 
   AppStrings._internal();
-
   // App name and branding
   final String appName = "Shakhi Shali";
   final String tagline = "Empowering Every Step of Your Journey";
@@ -112,6 +111,53 @@ class AppStrings {
   final String periodEnd = "Period End";
   final String today = "Today";
 
+  //reports
+
+  // Section Titles
+  final String title = "Your Period Report";
+  final String avgCycleLabel = "Avg Cycle";
+  final String avgPeriodLabel = "Avg Period";
+  final String longestLabel = "Longest";
+  final String shortestLabel = "Shortest";
+  final String patternCalendarTitle = "Pattern Calendar";
+  final String cycleTrendTitle = "Cycle Length Trend";
+  final String periodDurationTitle = "Period Duration";
+  final String insightsTitle = "Insights";
+
+  // Values
+  final String avgCycleValue = "28 days";
+  final String avgPeriodValue = "5 days";
+  final String longestValue = "31 days";
+  final String shortestValue = "26 days";
+
+  // Insights
+  final String insightsLine1 =
+      "Your cycles are regular with an average length of 28 days.";
+  final String insightsLine2 =
+      "In the past 6 months, your shortest period was 4 days, and your longest was 6 days.";
+
+  // final String appName = " Sakhi Sali ";
+
+  // final String login = 'Login';
+  // final String signup = 'Sign Up';
+  //
+  // final String emailHint = 'Email address';
+  // final String passwordHint = 'Password';
+  // final String confirmPasswordHint = 'Confirm Password';
+  // final String rememberMe = "Remember me";
+  // final String forgotPassword = "Forgot Password?";
+  // final String continueText = "Continue";
+  // final String orSignUpWith = "or Sign up with";
+  //
+  // final String signUp = "Sign Up";
+  // final String signIn = "Sign In";
+  // final String google = "Google";
+  // final String apple = "Apple";
+  // final String doNotHaveAccount = "Don't have an account?";
+  // final String alreadyHaveAccount = "Already have an account?";
+
+  //
+
   // PMS Yoga Poses Screen
   final String pmsYogaTitle = "PMS Yoga Poses";
   final String startPractice = "Start Practice";
@@ -199,24 +245,3 @@ class AppStrings {
   final String notifSleepDesc =
       "Maintaining a consistent sleep schedule can help regulate your cycle and reduce PMS symptoms.";
 }
-// final String appName = " Sakhi Sali ";
-
-// final String login = 'Login';
-// final String signup = 'Sign Up';
-//
-// final String emailHint = 'Email address';
-// final String passwordHint = 'Password';
-// final String confirmPasswordHint = 'Confirm Password';
-// final String rememberMe = "Remember me";
-// final String forgotPassword = "Forgot Password?";
-// final String continueText = "Continue";
-// final String orSignUpWith = "or Sign up with";
-//
-// final String signUp = "Sign Up";
-// final String signIn = "Sign In";
-// final String google = "Google";
-// final String apple = "Apple";
-// final String doNotHaveAccount = "Don't have an account?";
-// final String alreadyHaveAccount = "Already have an account?";
-
-//

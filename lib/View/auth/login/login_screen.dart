@@ -1,4 +1,3 @@
-import "package:sakhi_sali/Constant/app_validation.dart";
 import "package:sakhi_sali/Import/custom_import.dart";
 
 class LoginScreen extends StatelessWidget {

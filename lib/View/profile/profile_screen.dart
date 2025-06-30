@@ -127,6 +127,7 @@ class ProfileScreen extends StatelessWidget {
                 width: 375.w,
                 height: 160,
                 child: ListView.builder(
+                  shrinkWrap: true,
                   itemCount: profileItemList.length,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
@@ -191,80 +192,77 @@ class ProfileScreen extends StatelessWidget {
                   color: AppColors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
-                    child: Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            children: [
-                              Icon(
-                                Icons.local_fire_department_outlined,
-                                color: AppColors.primaryRed,
-                                size: 14,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.local_fire_department_outlined,
+                              color: AppColors.primaryRed,
+                              size: 14,
+                            ),
+                            spaceHorizontal5,
+                            Text(
+                              'Current Steak',
+                              style: AppTextStyles().robotoMediumStyle,
+                            ),
+                            Spacer(),
+                            Text(
+                              '28 Days',
+                              style: AppTextStyles().robotoMediumStyle.copyWith(
+                                fontWeight: FontWeight.w600,
                               ),
-                              spaceHorizontal5,
-                              Text(
-                                'Current Steak',
-                                style: AppTextStyles().robotoMediumStyle,
-                              ),
-                              Spacer(),
-                              Text(
-                                '28 Days',
-                                style: AppTextStyles().robotoMediumStyle
-                                    .copyWith(fontWeight: FontWeight.w600),
-                              ),
-                            ],
-                          ),
-                          ListView.builder(
-                            physics: NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemCount: wlLogItems.length,
-                            itemBuilder: (context, index) {
-                              final item = wlLogItems[index];
-                              return SizedBox(
-                                child: ListTile(
-                                  leading: Container(
-                                    height: 32.h,
-                                    width: 32.w,
-                                    decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Color(
-                                            0xFFFF6F61,
-                                          ).withOpacity(0.2),
-                                          blurRadius: 8,
-                                          offset: Offset(0, 4),
-                                        ),
-                                      ],
-                                      color: AppColors.screenBgColor,
-                                      borderRadius: BorderRadius.circular(50),
-                                    ),
-                                    child: Icon(
-                                      item['icon'],
-                                      color: AppColors.primaryRed,
-                                    ),
+                            ),
+                          ],
+                        ),
+                        ListView.builder(
+                          physics: NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          itemCount: wlLogItems.length,
+                          itemBuilder: (context, index) {
+                            final item = wlLogItems[index];
+                            return SizedBox(
+                              child: ListTile(
+                                leading: Container(
+                                  height: 32.h,
+                                  width: 32.w,
+                                  decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Color(
+                                          0xFFFF6F61,
+                                        ).withOpacity(0.2),
+                                        blurRadius: 8,
+                                        offset: Offset(0, 4),
+                                      ),
+                                    ],
+                                    color: AppColors.screenBgColor,
+                                    borderRadius: BorderRadius.circular(50),
                                   ),
-                                  title: Text(
-                                    item['title'],
-                                    style: AppTextStyles()
-                                        .textFormFieldHintStyle
-                                        .copyWith(color: AppColors.textBlack),
-                                  ),
-                                  subtitle: Text(
-                                    item['subtitle'],
-                                    style: AppTextStyles()
-                                        .textFormFieldHintStyle
-                                        .copyWith(
-                                          color: AppColors.subtitleBlack,
-                                          fontSize: 12,
-                                        ),
+                                  child: Icon(
+                                    item['icon'],
+                                    color: AppColors.primaryRed,
                                   ),
                                 ),
-                              );
-                            },
-                          ),
-                        ],
-                      ),
+                                title: Text(
+                                  item['title'],
+                                  style: AppTextStyles().textFormFieldHintStyle
+                                      .copyWith(color: AppColors.textBlack),
+                                ),
+                                subtitle: Text(
+                                  item['subtitle'],
+                                  style: AppTextStyles().textFormFieldHintStyle
+                                      .copyWith(
+                                        color: AppColors.subtitleBlack,
+                                        fontSize: 12,
+                                      ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
                     ),
                   ),
                 ),

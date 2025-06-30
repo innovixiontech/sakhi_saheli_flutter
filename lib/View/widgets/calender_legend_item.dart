@@ -10,25 +10,24 @@ class LegendItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        // Colored dot or square
-        Container(
-          width: 12,
-          height: 12,
-          margin: const EdgeInsets.only(right: 6),
+        // Icon container (dot/symbol)
+        SizedBox(
+          width: 12.w,
+          height: 12.h,
           child: Image.asset(icon, fit: BoxFit.cover),
-          // decoration: BoxDecoration(color: color, shape: BoxShape.circle),
         ),
 
-        // Text label
+        SizedBox(width: 6.w),
+
+        // Label text
         Text(
           label,
           style: AppTextStyles().textFormFieldHintStyle.copyWith(
-            color: Colors.black,
+            color: AppColors.black,
           ),
         ),
-
-        const SizedBox(width: 8), // spacing between items
       ],
     );
   }
