@@ -4,6 +4,11 @@ class CalendarController extends GetxController {
   var focusedDay = DateTime.now().obs;
   var selectedDay = Rxn<DateTime>();
 
+  final List<DateTime> calendarRange = [
+    DateTime.utc(2020, 1, 1), // firstDay
+    DateTime.utc(2030, 12, 31), // lastDay
+  ];
+
   // Mark special days with a blood drop
   static final List<DateTime> bloodDropDays = <DateTime>[
     DateTime.utc(2025, 6, 25),

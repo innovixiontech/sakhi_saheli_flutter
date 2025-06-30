@@ -111,6 +111,31 @@ class AppStrings {
   final String periodEnd = "Period End";
   final String today = "Today";
 
+  //reports
+
+  // Section Titles
+  final String title = "Your Period Report";
+  final String avgCycleLabel = "Avg Cycle";
+  final String avgPeriodLabel = "Avg Period";
+  final String longestLabel = "Longest";
+  final String shortestLabel = "Shortest";
+  final String patternCalendarTitle = "Pattern Calendar";
+  final String cycleTrendTitle = "Cycle Length Trend";
+  final String periodDurationTitle = "Period Duration";
+  final String insightsTitle = "Insights";
+
+  // Values
+  final String avgCycleValue = "28 days";
+  final String avgPeriodValue = "5 days";
+  final String longestValue = "31 days";
+  final String shortestValue = "26 days";
+
+  // Insights
+  final String insightsLine1 =
+      "Your cycles are regular with an average length of 28 days.";
+  final String insightsLine2 =
+      "In the past 6 months, your shortest period was 4 days, and your longest was 6 days.";
+
   // final String appName = " Sakhi Sali ";
 
   // final String login = 'Login';

@@ -1,6 +1,5 @@
 import "package:flutter/services.dart";
 import "package:sakhi_sali/Import/custom_import.dart";
-import "package:sakhi_sali/Routes/routes.dart";
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key}) {
