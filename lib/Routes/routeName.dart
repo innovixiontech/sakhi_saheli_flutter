@@ -13,4 +13,6 @@ class RouteName {
   static String pmsFriendlyFood = "/pmsFriendlyFood";
   static String pmsYogaPoses = "/pmsYogaPoses";
   static String notificationScreen = "/notificationScreen";
+  static String trackPregnancyScreen = "/trackPregnancyScreen";
+  static String periodCareGuideScreen = "/periodCareGuideScreen";
 }

@@ -18,6 +18,7 @@ class NotificationScreen extends StatelessWidget {
       body: Column(
         children: [
           // tab Bar
+          spaceVertical10,
           _buildTabBar(controller),
           SizedBox(height: 16),
 
@@ -88,7 +89,12 @@ class NotificationScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               final notification = controller.notificationCardItem[index];
               return NotificationCard(
-                icon: Image.asset(notification['image'], width: 24, height: 24),
+                icon: Image.asset(
+                  notification['image'],
+                  width: 24,
+                  height: 24,
+                  color: AppColors.primaryRed,
+                ),
                 title: notification['title'],
                 subtitle: notification['subtitle'],
                 time: notification['time'],

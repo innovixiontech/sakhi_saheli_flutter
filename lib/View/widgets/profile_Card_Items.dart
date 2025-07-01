@@ -10,7 +10,7 @@ class profileItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       // width: 63.11.w,
-      height: 44.h,
+      // height: 44.h,
       child: Column(
         //todo
         children: [

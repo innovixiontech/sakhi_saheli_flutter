@@ -29,7 +29,7 @@ class ReportsScreen extends StatelessWidget {
                     crossAxisCount: 2,
                     mainAxisSpacing: 16,
                     crossAxisSpacing: 16,
-                    childAspectRatio: 1.93,
+                    childAspectRatio: 1.6,
                   ),
                   itemBuilder: (context, index) {
                     final item = reportController.reportStats[index];

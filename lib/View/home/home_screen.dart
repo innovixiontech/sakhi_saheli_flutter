@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Color(0xFFFFF5F7),
         appBar: CustomAppBar(
-          backgroundColor: Color(0xFFFFF5F7),
+          backgroundColor: AppColors.white,
           title: Text(
             AppStrings().dashboardTitle,
             style: AppTextStyles().robotoMediumStyle.copyWith(
@@ -162,59 +162,77 @@ class HomeScreen extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         itemCount: itemList.length,
                         itemBuilder: (context, index) {
-                          return Container(
-                            margin: EdgeInsets.only(right: 12.w),
-                            height: 93.h,
-                            width: 80.w,
-                            decoration: BoxDecoration(
-                              color: AppColors.white,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.1),
-                                  blurRadius: 8,
-                                  offset: Offset(0, 4),
-                                ),
-                              ],
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Column(
-                              children: [
-                                spaceVertical12,
-                                Container(
-                                  height: 40.h,
-                                  width: 40.w,
-                                  decoration: BoxDecoration(
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Color(0xFFFF6F61).withOpacity(
-                                          0.2,
-                                        ), // soft reddish shadow
-                                        blurRadius: 8,
-                                        offset: Offset(0, 4),
-                                      ),
-                                    ],
-                                    color: AppColors.screenBgColor,
-                                    borderRadius: BorderRadius.circular(50),
+                          return GestureDetector(
+                            onTap: () {
+                              if (index == 0) {
+                                // period care guide  screen
+                                Get.toNamed(RouteName.periodCareGuideScreen);
+                              }
+                              if (index == 1) {
+                                //Symptoms
+                              }
+                              if (index == 2) {
+                                //Fertility Screen
+                              }
+
+                              if (index == 3) {
+                                Get.toNamed(RouteName.trackPregnancyScreen);
+                              }
+                            },
+                            child: Container(
+                              margin: EdgeInsets.only(right: 12.w),
+                              height: 93.h,
+                              width: 80.w,
+                              decoration: BoxDecoration(
+                                color: AppColors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.1),
+                                    blurRadius: 8,
+                                    offset: Offset(0, 4),
                                   ),
-                                  child: Center(
-                                    child: Image.asset(
-                                      itemList[index]['image'],
+                                ],
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Column(
+                                children: [
+                                  spaceVertical12,
+                                  Container(
+                                    height: 40.h,
+                                    width: 40.w,
+                                    decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Color(0xFFFF6F61).withOpacity(
+                                            0.2,
+                                          ), // soft reddish shadow
+                                          blurRadius: 8,
+                                          offset: Offset(0, 4),
+                                        ),
+                                      ],
+                                      color: AppColors.screenBgColor,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: Center(
+                                      child: Image.asset(
+                                        itemList[index]['image'],
+                                      ),
                                     ),
                                   ),
-                                ),
-                                spaceVertical10,
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 4,
+                                  spaceVertical10,
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 4,
+                                    ),
+                                    child: Text(
+                                      itemList[index]['title'],
+                                      style: AppTextStyles().robotoRegularStyle,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                    ),
                                   ),
-                                  child: Text(
-                                    itemList[index]['title'],
-                                    style: AppTextStyles().robotoRegularStyle,
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                  ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           );
                         },

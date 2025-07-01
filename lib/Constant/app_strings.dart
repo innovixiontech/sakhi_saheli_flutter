@@ -244,4 +244,35 @@ class AppStrings {
   final String notifSleepTime = "2 days ago";
   final String notifSleepDesc =
       "Maintaining a consistent sleep schedule can help regulate your cycle and reduce PMS symptoms.";
+
+  // Track Pregnancy Screen
+  final String trackPregnancyTitle = "Track Pregnancy";
+
+  // Fertility Window
+  final String fertilityWindowTitle = "Fertility Window";
+  final String fertilityWindowDescription =
+      "High chance of conception during this period";
+  final String fertilityWindowRange =
+      "March 15 - March 21"; // this can be dynamic
+  final String conceptionChanceLabel = "75%"; // this can also be dynamic
+
+  // Expected Due Date
+  final String expectedDueDateTitle = "Expected Due Date";
+  final String conceivedTodayLabel = "If conceived today";
+  final String dueDate = "December 21, 2024"; // dynamic
+  final String currentWeekLabel = "Currently in Week 4";
+
+  // Health Tips
+  final String healthTipsTitle = "Health Tips";
+
+  // Health Tips - Items
+  final String nutritionTipTitle = "Nutrition Guidelines";
+  final String nutritionTipDesc =
+      "Focus on folate-rich foods and prenatal vitamins";
+
+  final String safeExerciseTipTitle = "Safe Exercises";
+  final String safeExerciseTipDesc = "Light yoga and walking recommended";
+
+  final String medicalCheckupTipTitle = "Medical Check-ups";
+  final String medicalCheckupTipDesc = "Schedule your next prenatal visit";
 }

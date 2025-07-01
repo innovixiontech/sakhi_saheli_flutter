@@ -80,7 +80,7 @@ class ProfileScreen extends StatelessWidget {
               spaceVertical64,
               Center(
                 child: Container(
-                  height: 76.h,
+                  height: 80.h,
                   width: 343.w,
                   decoration: BoxDecoration(
                     color: AppColors.white,

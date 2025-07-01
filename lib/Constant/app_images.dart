@@ -25,6 +25,10 @@ class AppImages {
   final String chocolateImage = "assets/images/chocolate_image.png";
   final String leafyGreensImage = "assets/images/leafy_greens_image.png";
   final String mixedBerriesImage = "assets/images/mixed_berries_image.png";
+  final String safeExerciseImage = "assets/images/safe_exercises.png";
+  final String nutritionGuidelinesImage =
+      "assets/images/nutrition_guidelines.png";
+  final String medicalCheckupsImage = "assets/images/medical_checkups.png";
 
   //icons
   final String sendIcon = "assets/icons/send_icon.png";
@@ -56,4 +60,5 @@ class AppImages {
   final String sleepScheduleIcon = "assets/icons/sleep_schedule_icon.png";
   final String stretchRelieveIcon = "assets/icons/stretch_relieve_icon.png";
   final String wellnessTipsIcon = "assets/icons/Wellness_tips_icon.png";
+  final String calendarIcon1 = "assets/icons/calendar.png";
 }
