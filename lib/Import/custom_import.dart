@@ -26,6 +26,7 @@ export 'package:sakhi_sali/View/widgets/calendar_screen_calendarDesign.dart';
 export 'package:sakhi_sali/View/widgets/custom_calender.dart';
 export 'package:sakhi_sali/View/widgets/report_Screen_CalendarDesign.dart';
 export 'package:sakhi_sali/View/widgets/report_BarChart.dart';
+export 'package:sakhi_sali/View/widgets/period_care_GBuildTab.dart';
 
 // screens
 export 'package:sakhi_sali/View/auth/signup/signup_screen.dart';
@@ -35,6 +36,7 @@ export 'package:sakhi_sali/View/reports/reports_screen.dart';
 export 'package:sakhi_sali/View/calendar/calendar_screen.dart';
 export 'package:sakhi_sali/View/home/home_screen.dart';
 export 'package:sakhi_sali/View/profile/profile_screen.dart';
+export 'package:sakhi_sali/View/periodCare/period_care_guide_screen.dart';
 
 // routes
 export '../../Routes/routeName.dart';
@@ -49,3 +51,4 @@ export 'package:sakhi_sali/View/bottomNav/bottom_nav_controller.dart';
 export 'package:sakhi_sali/View/profile/controller/profile_controller.dart';
 export 'package:sakhi_sali/View/calendar/controller/calender_controller.dart';
 export 'package:sakhi_sali/View/reports/controller/report_controller.dart';
+export 'package:sakhi_sali/View/periodCare/controller/period_care_guide_Controller.dart';

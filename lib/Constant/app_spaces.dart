@@ -47,6 +47,7 @@ final spaceHorizontal8 = SizedBox(width: 8.w);
 final spaceHorizontal10 = SizedBox(width: 10.w);
 final spaceHorizontal12 = SizedBox(width: 12.w);
 final spaceHorizontal15 = SizedBox(width: 15.w);
+final spaceHorizontal16 = SizedBox(width: 16.w);
 final spaceHorizontal19 = SizedBox(width: 19.w);
 final spaceHorizontal20 = SizedBox(width: 20.w);
 final spaceHorizontal30 = SizedBox(width: 30.w);

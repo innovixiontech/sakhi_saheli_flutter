@@ -29,6 +29,7 @@ class AppImages {
   final String nutritionGuidelinesImage =
       "assets/images/nutrition_guidelines.png";
   final String medicalCheckupsImage = "assets/images/medical_checkups.png";
+  final String headacheImage = "assets/images/headache.png";
 
   //icons
   final String sendIcon = "assets/icons/send_icon.png";
@@ -61,4 +62,7 @@ class AppImages {
   final String stretchRelieveIcon = "assets/icons/stretch_relieve_icon.png";
   final String wellnessTipsIcon = "assets/icons/Wellness_tips_icon.png";
   final String calendarIcon1 = "assets/icons/calendar.png";
+  final String headacheIcon = "assets/icons/headache.png";
+  final String crampsIcon = "assets/icons/cramps.png";
+  final String fatigueIcon = "assets/icons/fatigue.png";
 }

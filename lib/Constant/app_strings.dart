@@ -275,4 +275,23 @@ class AppStrings {
 
   final String medicalCheckupTipTitle = "Medical Check-ups";
   final String medicalCheckupTipDesc = "Schedule your next prenatal visit";
+
+  /// Period Guide Care Constants
+  final String periodCareTitle = 'Period Care Guide';
+  final String headache = 'Headache';
+  final String cramps = 'Cramps';
+  final String fatigue = 'Fatigue';
+  final String symptomTitle = 'Symptom Tracker';
+  final String painLevel = 'Pain Level';
+  final String headacheInfo =
+      'Headaches during the menstrual cycle are often caused by hormonal changes, dehydration, or stress.';
+  final String stayHydrated = 'Stay Hydrated';
+  final String stayHydratedDesc =
+      'Drink at least 8-10 glasses of water daily to prevent dehydration which can worsen headaches.';
+  final String restInQuiet = 'Rest in a Quiet Place';
+  final String restInQuietDesc =
+      'Find a quiet, dark room to rest. Reduce exposure to noise and bright lights that may trigger pain.';
+  final String coldCompress = 'Use Cold Compress';
+  final String coldCompressDesc =
+      'Apply a cold cloth or ice pack to your forehead for 15 minutes to help reduce pain and inflammation.';
 }

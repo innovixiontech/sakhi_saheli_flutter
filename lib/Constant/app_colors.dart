@@ -17,6 +17,10 @@ class AppColors {
   static const Color bloodDrop = Color(0xFFEF4444);
   static const Color screenBgColor1 = Color(0xFFFFF5F7);
   static const Color lightSuccessGreen = Color(0xFFDCFCE7);
+  static const Color pinkColor = Colors.pink;
+  static const Color pink300 = Color(0xFFF06292);
+  static const Color pink50 = Color(0xFFFCE4EC);
+  static const Color whiteGreyest = Color(0xFFF3F4F6);
   // Light pinkish background
 
   // static const Color textColor = Color(0xFF282828);
